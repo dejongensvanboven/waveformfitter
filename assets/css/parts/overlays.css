@@ -1,0 +1,146 @@
+.overlays {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 98;
+}
+.overlays.active {
+  pointer-events: all;
+}
+.overlays.active .background {
+  opacity: .6;
+}
+.overlays .background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #2B2367;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+.overlays .overlay {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  -webkit-transition: transform 0.45s 0s ease-in-out, opacity 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.45s 0s ease-in-out, opacity 0.3s 0s ease-in-out;
+  -ms-transition: transform 0.45s 0s ease-in-out, opacity 0.3s 0s ease-in-out;
+  -o-transition: transform 0.45s 0s ease-in-out, opacity 0.3s 0s ease-in-out;
+  transition: transform 0.45s 0s ease-in-out, opacity 0.3s 0s ease-in-out;
+}
+.overlays .overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: transform 0.45s 0.3s ease-in-out, opacity 0.15s 0.3s ease-in-out;
+  -moz-transition: transform 0.45s 0.3s ease-in-out, opacity 0.15s 0.3s ease-in-out;
+  -ms-transition: transform 0.45s 0.3s ease-in-out, opacity 0.15s 0.3s ease-in-out;
+  -o-transition: transform 0.45s 0.3s ease-in-out, opacity 0.15s 0.3s ease-in-out;
+  transition: transform 0.45s 0.3s ease-in-out, opacity 0.15s 0.3s ease-in-out;
+}
+.overlays .overlay .innerContent {
+  padding: 20px;
+  background: #ffffff;
+  -webkit-border-top-right-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -webkit-border-top-left-radius: 16px;
+  -moz-border-radius-topright: 16px;
+  -moz-border-radius-bottomright: 16px;
+  -moz-border-radius-bottomleft: 16px;
+  -moz-border-radius-topleft: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  transition-delay: .6s;
+  max-width: 700px;
+  width: 100%;
+}
+.overlays .overlay .innerContent .graph {
+  margin: auto;
+  height: 270px;
+  display: block;
+}
+.overlays .overlay .innerContent .graph .widget_container,
+.overlays .overlay .innerContent .graph .widget_detector_select {
+  height: 100%;
+}
+.overlays .overlay .innerContent .graph svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.overlays .overlay .innerContent .graph svg text {
+  font-family: "Brown", sans-serif;
+  font-size: 8px;
+  fill: #26272F !important;
+}
+.overlays .overlay .innerContent .graph svg .domain {
+  display: none;
+}
+.overlays .overlay .innerContent .graph svg .tick line {
+  stroke: #DBE3EA;
+}
+.overlays .overlay.deleteWishListOverlay {
+  z-index: 99;
+}
+.overlays .overlay .close {
+  cursor: pointer;
+  height: auto;
+  left: auto;
+  position: absolute;
+  top: -40px;
+  width: auto;
+  right: 20px;
+}
+.overlays .overlay .close:hover i {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -moz-transform: translate(-50%, -50%) rotate(90deg);
+  -o-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.overlays .overlay .close i {
+  color: #ffffff;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  -moz-transform: translate(-50%, -50%) rotate(0deg);
+  -o-transform: translate(-50%, -50%) rotate(0deg);
+  -ms-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transition: transform 0.3s 0s cubic-bezier(0.22, 1, 0.36, 1);
+  -moz-transition: transform 0.3s 0s cubic-bezier(0.22, 1, 0.36, 1);
+  -o-transition: transform 0.3s 0s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.3s 0s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/*# sourceMappingURL=overlays.css.map */

@@ -1,0 +1,106 @@
+header {
+  height: auto;
+  left: 10px;
+  position: fixed;
+  top: 40px;
+  width: 70px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: transform 0.6s 0s cubic-bezier(0.83, 0, 0.17, 1), opacity 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.6s 0s cubic-bezier(0.83, 0, 0.17, 1), opacity 0.3s 0s ease-in-out;
+  -ms-transition: transform 0.6s 0s cubic-bezier(0.83, 0, 0.17, 1), opacity 0.3s 0s ease-in-out;
+  -o-transition: transform 0.6s 0s cubic-bezier(0.83, 0, 0.17, 1), opacity 0.3s 0s ease-in-out;
+  transition: transform 0.6s 0s cubic-bezier(0.83, 0, 0.17, 1), opacity 0.3s 0s ease-in-out;
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+header.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+header .statusBar {
+  margin-top: 20px;
+}
+header .statusBar .statItem {
+  display: block;
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #CCE4EB;
+  margin-bottom: 8px;
+  width: 44px;
+  height: 44px;
+  line-height: 46px;
+  color: #2B2367;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+}
+header .statusBar .statItem:last-child {
+  margin-bottom: 0;
+}
+header .statusBar .statItem.active {
+  background: #2B2367;
+  color: #ffffff;
+}
+header .statusBar .statItem.checked {
+  pointer-events: all;
+  cursor: pointer;
+}
+header .statusBar .statItem.checked .check {
+  -webkit-transform: translateX(50%) scale(1);
+  -moz-transform: translateX(50%) scale(1);
+  -o-transform: translateX(50%) scale(1);
+  -ms-transform: translateX(50%) scale(1);
+  transform: translateX(50%) scale(1);
+  -webkit-transition: transform 0.6s 0s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -moz-transition: transform 0.6s 0s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  -o-transition: transform 0.6s 0s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.6s 0s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+header .statusBar .statItem .check {
+  background: #FFED01;
+  border-radius: 50%;
+  color: #2B2367;
+  height: 20px;
+  left: auto;
+  position: absolute;
+  top: -1px;
+  width: 20px;
+  right: 0;
+  -webkit-transform: translateX(50%) scale(0);
+  -moz-transform: translateX(50%) scale(0);
+  -o-transform: translateX(50%) scale(0);
+  -ms-transform: translateX(50%) scale(0);
+  transform: translateX(50%) scale(0);
+  line-height: 18px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+header .statusBar .statItem .check i {
+  font-size: 7px;
+}
+/*# sourceMappingURL=header.css.map */

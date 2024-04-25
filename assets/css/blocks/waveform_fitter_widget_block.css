@@ -1,0 +1,8 @@
+.waveformFitterWidgetBlock {
+  height: 100%;
+}
+svg .tick line {
+  stroke: red;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=waveform_fitter_widget_block.css.map */
