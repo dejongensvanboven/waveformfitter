@@ -12,7 +12,7 @@ $(document).ready( function () {
     
     
     //Read the data
-    d3.csv('/gfx/measurement-files/H1/H1_Template_final.csv',
+    d3.csv('gfx/measurement-files/H1/H1_Template_final.csv',
       function(d){
             return [ +Object.values(d)[0] , +Object.values(d)[1]  * 1e20 ];
           }, TemplateSimulationDataLoaded)
