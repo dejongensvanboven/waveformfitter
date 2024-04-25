@@ -3584,7 +3584,7 @@ class ScaleableWaveData  {
             return value[1];
         })
         this.linedata();
-        this.t0=0.423;
+        this.t0=0.16;
         this.M0=65;
         this.D0=420;
         this.mass=(mass)?mass:65;
