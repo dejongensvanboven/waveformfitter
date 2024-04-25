@@ -3576,19 +3576,19 @@ class WaveData{
 }
 
 class ScaleableWaveData  {
-    constructor(datain,mass=65,dist=420){
+    constructor(datain,mass=80,dist=190){
         this.t=datain.map(function(value,index){
-            return value[0] - dataExtent[0] 
+            return value[0] - dataExtent[0] + 0.009
         })
         this.h=datain.map(function(value,index){
             return value[1];
         })
         this.linedata();
-        this.t0=0.16;
-        this.M0=65;
-        this.D0=420;
-        this.mass=(mass)?mass:65;
-        this.dist=(dist)?dist:420;
+        this.t0=0.165;
+        this.M0=80;
+        this.D0=190;
+        this.mass=(mass)?mass:80;
+        this.dist=(dist)?dist:190;
         this.scale(mass,dist);        
     }    
 
